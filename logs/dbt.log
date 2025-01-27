@@ -576,3 +576,725 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m11:33:40.489776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002163ECD78D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021640EF4C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021640EF5050>]}
 [0m11:33:40.489776 [debug] [MainThread]: Flushing usage events
 [0m11:33:41.257820 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:10:46.400044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BEEF36410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BEEF8AD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BEEF35E10>]}
+
+
+============================== 15:10:46.405287 | 36ea706a-290c-4a62-8e77-d54d63896f83 ==============================
+[0m15:10:46.405287 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:10:46.406283 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:10:46.977300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36ea706a-290c-4a62-8e77-d54d63896f83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BEFD6BBD0>]}
+[0m15:10:47.012366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '36ea706a-290c-4a62-8e77-d54d63896f83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BEE307490>]}
+[0m15:10:47.014366 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:10:47.319120 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:10:47.320119 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:10:47.321119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '36ea706a-290c-4a62-8e77-d54d63896f83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BF0EDFB90>]}
+[0m15:10:48.901965 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m15:10:48.906966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '36ea706a-290c-4a62-8e77-d54d63896f83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BF0F82390>]}
+[0m15:10:48.932496 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:10:48.953482 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:10:49.031305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '36ea706a-290c-4a62-8e77-d54d63896f83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BF104D810>]}
+[0m15:10:49.031305 [info ] [MainThread]: Found 470 macros
+[0m15:10:49.032311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36ea706a-290c-4a62-8e77-d54d63896f83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BF1061850>]}
+[0m15:10:49.033311 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:10:49.034310 [debug] [MainThread]: Command end result
+[0m15:10:49.047823 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:10:49.049824 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:10:49.053336 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:10:49.053336 [debug] [MainThread]: Command `dbt run` succeeded at 15:10:49.053336 after 2.75 seconds
+[0m15:10:49.054338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BE8C87F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BE8C87410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BE8C873D0>]}
+[0m15:10:49.055340 [debug] [MainThread]: Flushing usage events
+[0m15:10:49.873207 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:12:44.887829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026683D764D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026683B992D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026683D76010>]}
+
+
+============================== 15:12:44.891830 | bebb2227-1e28-463a-9685-67f30f6cb085 ==============================
+[0m15:12:44.891830 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:12:44.891830 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:12:45.156765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bebb2227-1e28-463a-9685-67f30f6cb085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026685AE5A10>]}
+[0m15:12:45.186765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bebb2227-1e28-463a-9685-67f30f6cb085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026684A50B10>]}
+[0m15:12:45.187749 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:12:45.343791 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:12:45.366791 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:12:45.367792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bebb2227-1e28-463a-9685-67f30f6cb085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026683191850>]}
+[0m15:12:45.819920 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m15:12:45.823912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bebb2227-1e28-463a-9685-67f30f6cb085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026683997450>]}
+[0m15:12:45.845431 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:12:45.848428 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:12:45.869428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bebb2227-1e28-463a-9685-67f30f6cb085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026685F29990>]}
+[0m15:12:45.869428 [info ] [MainThread]: Found 470 macros
+[0m15:12:45.870428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bebb2227-1e28-463a-9685-67f30f6cb085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026683D6B490>]}
+[0m15:12:45.871428 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:12:45.872429 [debug] [MainThread]: Command end result
+[0m15:12:45.889430 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:12:45.891431 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:12:45.894431 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:12:45.894431 [debug] [MainThread]: Command `dbt run` succeeded at 15:12:45.894431 after 1.05 seconds
+[0m15:12:45.895433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002668314D410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026685E98490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000266FDA07F90>]}
+[0m15:12:45.895433 [debug] [MainThread]: Flushing usage events
+[0m15:12:46.847104 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:15:35.912487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B04A184190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B049FA12D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B04A1A8410>]}
+
+
+============================== 15:15:35.917490 | 6c1cd5a5-9b6e-46b4-9b23-2ad2b73389cd ==============================
+[0m15:15:35.917490 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:15:35.917490 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:15:36.188115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6c1cd5a5-9b6e-46b4-9b23-2ad2b73389cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B04BF8EA50>]}
+[0m15:15:36.218627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6c1cd5a5-9b6e-46b4-9b23-2ad2b73389cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B04AE80E90>]}
+[0m15:15:36.219627 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:15:36.369142 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:15:36.437655 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:15:36.438655 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:15:36.438655 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m15:15:36.442657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6c1cd5a5-9b6e-46b4-9b23-2ad2b73389cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B04C2AAB90>]}
+[0m15:15:36.468170 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:15:36.471170 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:15:36.487911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6c1cd5a5-9b6e-46b4-9b23-2ad2b73389cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B04C2151D0>]}
+[0m15:15:36.488911 [info ] [MainThread]: Found 470 macros
+[0m15:15:36.489911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6c1cd5a5-9b6e-46b4-9b23-2ad2b73389cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B04A1F36D0>]}
+[0m15:15:36.490910 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:15:36.492909 [debug] [MainThread]: Command end result
+[0m15:15:36.504423 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:15:36.506419 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:15:36.508420 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:15:36.509421 [debug] [MainThread]: Command `dbt run` succeeded at 15:15:36.509421 after 0.64 seconds
+[0m15:15:36.509421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B043C7AF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B043EC7F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B043EC73D0>]}
+[0m15:15:36.509421 [debug] [MainThread]: Flushing usage events
+[0m15:15:37.255189 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:17:52.731059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A9F396F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A9F3E3F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A9F3E3590>]}
+
+
+============================== 15:17:52.735060 | 8af50754-5744-48d1-b29e-168cc68d75f7 ==============================
+[0m15:17:52.735060 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:17:52.735060 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:17:53.021654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8af50754-5744-48d1-b29e-168cc68d75f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AA115B6D0>]}
+[0m15:17:53.050667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8af50754-5744-48d1-b29e-168cc68d75f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AA0090B90>]}
+[0m15:17:53.052305 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:17:53.194822 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:17:53.217826 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:17:53.217826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '8af50754-5744-48d1-b29e-168cc68d75f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A9E7B1950>]}
+[0m15:17:53.661909 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m15:17:53.664907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8af50754-5744-48d1-b29e-168cc68d75f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AA13B7450>]}
+[0m15:17:53.685908 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:17:53.687907 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:17:53.705909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8af50754-5744-48d1-b29e-168cc68d75f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AA1568ED0>]}
+[0m15:17:53.706909 [info ] [MainThread]: Found 470 macros
+[0m15:17:53.707914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8af50754-5744-48d1-b29e-168cc68d75f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A9EF118D0>]}
+[0m15:17:53.708914 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:17:53.709912 [debug] [MainThread]: Command end result
+[0m15:17:53.726418 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:17:53.728419 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:17:53.731419 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:17:53.731419 [debug] [MainThread]: Command `dbt run` succeeded at 15:17:53.731419 after 1.05 seconds
+[0m15:17:53.732420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A98DFA010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A990D8150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AA1388490>]}
+[0m15:17:53.732420 [debug] [MainThread]: Flushing usage events
+[0m15:17:54.521585 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:18:09.600890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7218568D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F721856190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F721856B90>]}
+
+
+============================== 15:18:09.604891 | 4dff1567-73ab-4bb6-8d9b-cd82ad1234fb ==============================
+[0m15:18:09.604891 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:18:09.605890 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:18:09.876083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4dff1567-73ab-4bb6-8d9b-cd82ad1234fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7218C3590>]}
+[0m15:18:09.906082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4dff1567-73ab-4bb6-8d9b-cd82ad1234fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F722550950>]}
+[0m15:18:09.907678 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:18:10.051429 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:18:10.085992 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:18:10.086514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4dff1567-73ab-4bb6-8d9b-cd82ad1234fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F721384F10>]}
+[0m15:18:10.530163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4dff1567-73ab-4bb6-8d9b-cd82ad1234fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7225503D0>]}
+[0m15:18:10.551192 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:18:10.554192 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:18:10.570221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4dff1567-73ab-4bb6-8d9b-cd82ad1234fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F723A28190>]}
+[0m15:18:10.571218 [info ] [MainThread]: Found 470 macros
+[0m15:18:10.572220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4dff1567-73ab-4bb6-8d9b-cd82ad1234fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F723923490>]}
+[0m15:18:10.573220 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:18:10.574221 [debug] [MainThread]: Command end result
+[0m15:18:10.586217 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:18:10.588219 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:18:10.591219 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:18:10.592221 [debug] [MainThread]: Command `dbt run` succeeded at 15:18:10.592221 after 1.03 seconds
+[0m15:18:10.592221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F722573C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F71B527F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F71B5BB790>]}
+[0m15:18:10.593219 [debug] [MainThread]: Flushing usage events
+[0m15:18:11.569319 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:19:57.426868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD879263D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD87949D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD879257D0>]}
+
+
+============================== 15:19:57.431869 | becabc47-bb33-40c5-b70f-af98025369ce ==============================
+[0m15:19:57.431869 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:19:57.431869 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m15:19:57.723062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'becabc47-bb33-40c5-b70f-af98025369ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD8973EF10>]}
+[0m15:19:57.753089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'becabc47-bb33-40c5-b70f-af98025369ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD886310D0>]}
+[0m15:19:57.754090 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:19:57.907120 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:19:57.938122 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:19:57.939120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'becabc47-bb33-40c5-b70f-af98025369ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD86D3D910>]}
+[0m15:19:58.407355 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbtlearn
+[0m15:19:58.411354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'becabc47-bb33-40c5-b70f-af98025369ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD87993690>]}
+[0m15:19:58.433355 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:19:58.437355 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:19:58.458357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'becabc47-bb33-40c5-b70f-af98025369ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD89B09B10>]}
+[0m15:19:58.459358 [info ] [MainThread]: Found 470 macros
+[0m15:19:58.459358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'becabc47-bb33-40c5-b70f-af98025369ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD899B70D0>]}
+[0m15:19:58.460862 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:19:58.461868 [debug] [MainThread]: Command end result
+[0m15:19:58.476866 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:19:58.478867 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:19:58.480866 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:19:58.482870 [debug] [MainThread]: Command `dbt run` succeeded at 15:19:58.481866 after 1.10 seconds
+[0m15:19:58.482870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD8797B250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD89A1A310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD87745150>]}
+[0m15:19:58.483867 [debug] [MainThread]: Flushing usage events
+[0m15:19:59.285186 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:22:44.021633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40B936290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40B7553D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40B955D50>]}
+
+
+============================== 15:22:44.025801 | 51d874e7-0581-4e07-aa5d-e041438d7468 ==============================
+[0m15:22:44.025801 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:22:44.026357 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:22:44.306596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '51d874e7-0581-4e07-aa5d-e041438d7468', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40B9A3550>]}
+[0m15:22:44.337595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '51d874e7-0581-4e07-aa5d-e041438d7468', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40C630E90>]}
+[0m15:22:44.339615 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:22:44.495131 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:22:44.531132 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:22:44.532133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '51d874e7-0581-4e07-aa5d-e041438d7468', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40AD4D850>]}
+[0m15:22:44.985313 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.dbtlearn
+- models.dbtlearn.dim
+- models.dbtlearn.src
+[0m15:22:44.988309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '51d874e7-0581-4e07-aa5d-e041438d7468', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40D92ED90>]}
+[0m15:22:45.010309 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:22:45.013309 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:22:45.033310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '51d874e7-0581-4e07-aa5d-e041438d7468', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40DB09AD0>]}
+[0m15:22:45.034313 [info ] [MainThread]: Found 470 macros
+[0m15:22:45.035310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '51d874e7-0581-4e07-aa5d-e041438d7468', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40B94B550>]}
+[0m15:22:45.036312 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:22:45.037310 [debug] [MainThread]: Command end result
+[0m15:22:45.051320 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:22:45.052321 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:22:45.055730 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:22:45.056733 [debug] [MainThread]: Command `dbt run` succeeded at 15:22:45.056733 after 1.08 seconds
+[0m15:22:45.056733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40C695410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D405617F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4056AB790>]}
+[0m15:22:45.057733 [debug] [MainThread]: Flushing usage events
+[0m15:22:45.841685 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:25:50.050179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DFB5564D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DFB555ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DFB5557D0>]}
+
+
+============================== 15:25:50.054107 | 9617ae40-f9de-4948-a3f3-ae49241a7dab ==============================
+[0m15:25:50.054107 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:25:50.054107 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:25:50.319404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9617ae40-f9de-4948-a3f3-ae49241a7dab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DFB688D50>]}
+[0m15:25:50.349404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9617ae40-f9de-4948-a3f3-ae49241a7dab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DFA91B790>]}
+[0m15:25:50.351404 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:25:50.499938 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:25:50.532938 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:25:50.533938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9617ae40-f9de-4948-a3f3-ae49241a7dab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DFA971990>]}
+[0m15:25:50.975235 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.dbtlearn.src
+- models.dbtlearn.dim
+- models.dbtlearn
+[0m15:25:50.979233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9617ae40-f9de-4948-a3f3-ae49241a7dab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DFD31B8D0>]}
+[0m15:25:51.002232 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:25:51.005232 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:25:51.023234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9617ae40-f9de-4948-a3f3-ae49241a7dab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DFD729C10>]}
+[0m15:25:51.023234 [info ] [MainThread]: Found 470 macros
+[0m15:25:51.024235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9617ae40-f9de-4948-a3f3-ae49241a7dab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DFA91E990>]}
+[0m15:25:51.025237 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:25:51.026235 [debug] [MainThread]: Command end result
+[0m15:25:51.038233 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:25:51.040234 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:25:51.043233 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:25:51.044235 [debug] [MainThread]: Command `dbt run` succeeded at 15:25:51.044235 after 1.04 seconds
+[0m15:25:51.044235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DF5267F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DF5267410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DF52673D0>]}
+[0m15:25:51.044235 [debug] [MainThread]: Flushing usage events
+[0m15:25:51.797018 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:26:53.413925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E53665F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E53665F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E53666E10>]}
+
+
+============================== 15:26:53.417925 | 07448264-98ac-4d57-8b97-c03de409bb94 ==============================
+[0m15:26:53.417925 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:26:53.418924 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:26:53.685979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '07448264-98ac-4d57-8b97-c03de409bb94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E5434D6D0>]}
+[0m15:26:53.716493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '07448264-98ac-4d57-8b97-c03de409bb94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E54370C50>]}
+[0m15:26:53.717546 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:26:53.862990 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:26:53.894995 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:26:53.895995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '07448264-98ac-4d57-8b97-c03de409bb94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E52A817D0>]}
+[0m15:26:54.336594 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.src
+- models.dim
+- models.dbtlearn
+[0m15:26:54.341113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '07448264-98ac-4d57-8b97-c03de409bb94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E5571BB90>]}
+[0m15:26:54.362109 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:26:54.365110 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:26:54.382108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '07448264-98ac-4d57-8b97-c03de409bb94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E55849990>]}
+[0m15:26:54.383112 [info ] [MainThread]: Found 470 macros
+[0m15:26:54.383112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '07448264-98ac-4d57-8b97-c03de409bb94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E5575AC90>]}
+[0m15:26:54.384114 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:26:54.385111 [debug] [MainThread]: Command end result
+[0m15:26:54.399614 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:26:54.401617 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:26:54.404616 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:26:54.405617 [debug] [MainThread]: Command `dbt run` succeeded at 15:26:54.405617 after 1.04 seconds
+[0m15:26:54.406617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E554BBC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E554BA5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E4D327F90>]}
+[0m15:26:54.406617 [debug] [MainThread]: Flushing usage events
+[0m15:26:55.146217 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:28:01.147142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253A80A67D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253A80A6210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253A80A6590>]}
+
+
+============================== 15:28:01.151885 | b421d077-0908-4fb7-a650-bdc7cf546bbe ==============================
+[0m15:28:01.151885 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:28:01.152885 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'debug': 'True', 'version_check': 'True', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:28:01.434268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b421d077-0908-4fb7-a650-bdc7cf546bbe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253A9E37390>]}
+[0m15:28:01.476789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b421d077-0908-4fb7-a650-bdc7cf546bbe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253A7477650>]}
+[0m15:28:01.478794 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:28:01.633306 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:28:01.705816 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:28:01.706816 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:28:01.707818 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.dim
+- models.dbtlearn
+- models.src
+[0m15:28:01.710818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b421d077-0908-4fb7-a650-bdc7cf546bbe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253AA1B2B50>]}
+[0m15:28:01.737821 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:28:01.740820 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:28:01.761345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b421d077-0908-4fb7-a650-bdc7cf546bbe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253A9EA9590>]}
+[0m15:28:01.762346 [info ] [MainThread]: Found 470 macros
+[0m15:28:01.763345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b421d077-0908-4fb7-a650-bdc7cf546bbe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253A9E99950>]}
+[0m15:28:01.765346 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:28:01.766345 [debug] [MainThread]: Command end result
+[0m15:28:01.785345 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:28:01.788347 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:28:01.791345 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:28:01.792347 [debug] [MainThread]: Command `dbt run` succeeded at 15:28:01.791345 after 0.69 seconds
+[0m15:28:01.792347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253A1D77390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253A1D77350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253A1D77F50>]}
+[0m15:28:01.793345 [debug] [MainThread]: Flushing usage events
+[0m15:28:02.588204 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:32:07.441606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002874CBE4D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002874CDC4F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002874CE17D10>]}
+
+
+============================== 15:32:07.445936 | c9de4a63-617c-4331-8276-f75264ff4197 ==============================
+[0m15:32:07.445936 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:32:07.446956 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:32:07.446956 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Javid\PycharmProjects\dbtlearn\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:32:07.447955 [debug] [MainThread]: Command `dbt run` failed at 15:32:07.447955 after 0.05 seconds
+[0m15:32:07.451958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002874CDBA6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002874CDC7850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002874CDC5110>]}
+[0m15:32:07.453960 [debug] [MainThread]: Flushing usage events
+[0m15:32:08.228493 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:32:15.739874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015654FF5490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015655227810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015655227BD0>]}
+
+
+============================== 15:32:15.743873 | b437751c-64dd-4c52-a20a-9fe0793e560f ==============================
+[0m15:32:15.743873 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:32:15.744876 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:32:15.758879 [info ] [MainThread]: dbt version: 1.9.1
+[0m15:32:15.758879 [info ] [MainThread]: python version: 3.11.9
+[0m15:32:15.759878 [info ] [MainThread]: python path: C:\Users\Javid\PycharmProjects\dbtlearn\.venv\Scripts\python.exe
+[0m15:32:15.759878 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m15:32:15.966183 [info ] [MainThread]: Using profiles dir at C:\Users\Javid\.dbt
+[0m15:32:15.966183 [info ] [MainThread]: Using profiles.yml file at C:\Users\Javid\.dbt\profiles.yml
+[0m15:32:15.967187 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Javid\PycharmProjects\dbtlearn\dbt_project.yml
+[0m15:32:15.968189 [info ] [MainThread]: adapter type: snowflake
+[0m15:32:15.968189 [info ] [MainThread]: adapter version: 1.9.0
+[0m15:32:15.972185 [info ] [MainThread]: Configuration:
+[0m15:32:15.973189 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:32:15.973189 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:32:15.974189 [info ] [MainThread]: Required dependencies:
+[0m15:32:15.975188 [debug] [MainThread]: Executing "git --help"
+[0m15:32:16.005188 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:32:16.006189 [debug] [MainThread]: STDERR: "b''"
+[0m15:32:16.006189 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:32:16.007188 [info ] [MainThread]: Connection:
+[0m15:32:16.008188 [info ] [MainThread]:   account: akmafiv-sd36638
+[0m15:32:16.008188 [info ] [MainThread]:   user: javidasadullayev
+[0m15:32:16.008188 [info ] [MainThread]:   database: AIRBNB
+[0m15:32:16.009188 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m15:32:16.009188 [info ] [MainThread]:   role: transform
+[0m15:32:16.009188 [info ] [MainThread]:   schema: DEV
+[0m15:32:16.010198 [info ] [MainThread]:   authenticator: None
+[0m15:32:16.010198 [info ] [MainThread]:   oauth_client_id: None
+[0m15:32:16.010198 [info ] [MainThread]:   query_tag: None
+[0m15:32:16.011188 [info ] [MainThread]:   client_session_keep_alive: False
+[0m15:32:16.011188 [info ] [MainThread]:   host: None
+[0m15:32:16.011188 [info ] [MainThread]:   port: None
+[0m15:32:16.012188 [info ] [MainThread]:   proxy_host: None
+[0m15:32:16.012188 [info ] [MainThread]:   proxy_port: None
+[0m15:32:16.012188 [info ] [MainThread]:   protocol: None
+[0m15:32:16.013188 [info ] [MainThread]:   connect_retries: 1
+[0m15:32:16.013188 [info ] [MainThread]:   connect_timeout: None
+[0m15:32:16.013188 [info ] [MainThread]:   retry_on_database_errors: False
+[0m15:32:16.014187 [info ] [MainThread]:   retry_all: False
+[0m15:32:16.014187 [info ] [MainThread]:   insecure_mode: False
+[0m15:32:16.014187 [info ] [MainThread]:   reuse_connections: True
+[0m15:32:16.015191 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:32:16.167734 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m15:32:17.512183 [debug] [MainThread]: Using snowflake connection "debug"
+[0m15:32:17.512183 [debug] [MainThread]: On debug: select 1 as id
+[0m15:32:17.512183 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:32:18.495731 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.983 seconds
+[0m15:32:18.496727 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:32:18.497713 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:32:18.497713 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\Javid\PycharmProjects\dbtlearn\dbt_project.yml> not found
+
+[0m15:32:18.498712 [debug] [MainThread]: Command `dbt debug` failed at 15:32:18.498712 after 2.81 seconds
+[0m15:32:18.499714 [debug] [MainThread]: Connection 'debug' was left open.
+[0m15:32:18.499714 [debug] [MainThread]: On debug: Close
+[0m15:32:18.712270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156551D7810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001564EF37F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015654FF5550>]}
+[0m15:32:18.712270 [debug] [MainThread]: Flushing usage events
+[0m15:32:19.434278 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:34:48.137600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E43EF85B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E43EF85CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E43EF859D0>]}
+
+
+============================== 15:34:48.141977 | 87115a5d-d661-44c3-860f-94947bcefd9a ==============================
+[0m15:34:48.141977 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:34:48.141977 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:34:48.153976 [info ] [MainThread]: dbt version: 1.9.1
+[0m15:34:48.154976 [info ] [MainThread]: python version: 3.11.9
+[0m15:34:48.154976 [info ] [MainThread]: python path: C:\Users\Javid\PycharmProjects\dbtlearn\.venv\Scripts\python.exe
+[0m15:34:48.155977 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m15:34:48.363984 [info ] [MainThread]: Using profiles dir at C:\Users\Javid\.dbt
+[0m15:34:48.364981 [info ] [MainThread]: Using profiles.yml file at C:\Users\Javid\.dbt\profiles.yml
+[0m15:34:48.364981 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Javid\PycharmProjects\dbtlearn\dbt_project.yml
+[0m15:34:48.366430 [info ] [MainThread]: adapter type: snowflake
+[0m15:34:48.366430 [info ] [MainThread]: adapter version: 1.9.0
+[0m15:34:48.418945 [info ] [MainThread]: Configuration:
+[0m15:34:48.419943 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:34:48.420869 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:34:48.420869 [info ] [MainThread]: Required dependencies:
+[0m15:34:48.421880 [debug] [MainThread]: Executing "git --help"
+[0m15:34:48.451688 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:34:48.452688 [debug] [MainThread]: STDERR: "b''"
+[0m15:34:48.453687 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:34:48.453687 [info ] [MainThread]: Connection:
+[0m15:34:48.454706 [info ] [MainThread]:   account: akmafiv-sd36638
+[0m15:34:48.454706 [info ] [MainThread]:   user: javidasadullayev
+[0m15:34:48.454706 [info ] [MainThread]:   database: AIRBNB
+[0m15:34:48.455688 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m15:34:48.455688 [info ] [MainThread]:   role: transform
+[0m15:34:48.455688 [info ] [MainThread]:   schema: DEV
+[0m15:34:48.455688 [info ] [MainThread]:   authenticator: None
+[0m15:34:48.456687 [info ] [MainThread]:   oauth_client_id: None
+[0m15:34:48.456687 [info ] [MainThread]:   query_tag: None
+[0m15:34:48.456687 [info ] [MainThread]:   client_session_keep_alive: False
+[0m15:34:48.457687 [info ] [MainThread]:   host: None
+[0m15:34:48.457687 [info ] [MainThread]:   port: None
+[0m15:34:48.457687 [info ] [MainThread]:   proxy_host: None
+[0m15:34:48.458689 [info ] [MainThread]:   proxy_port: None
+[0m15:34:48.458689 [info ] [MainThread]:   protocol: None
+[0m15:34:48.458689 [info ] [MainThread]:   connect_retries: 1
+[0m15:34:48.458689 [info ] [MainThread]:   connect_timeout: None
+[0m15:34:48.459687 [info ] [MainThread]:   retry_on_database_errors: False
+[0m15:34:48.459687 [info ] [MainThread]:   retry_all: False
+[0m15:34:48.459687 [info ] [MainThread]:   insecure_mode: False
+[0m15:34:48.460687 [info ] [MainThread]:   reuse_connections: True
+[0m15:34:48.460687 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:34:48.610084 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m15:34:48.644085 [debug] [MainThread]: Using snowflake connection "debug"
+[0m15:34:48.644085 [debug] [MainThread]: On debug: select 1 as id
+[0m15:34:48.644085 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:34:49.572014 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.928 seconds
+[0m15:34:49.573009 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:34:49.574008 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:34:49.575009 [debug] [MainThread]: Command `dbt debug` succeeded at 15:34:49.575009 after 1.48 seconds
+[0m15:34:49.575009 [debug] [MainThread]: Connection 'debug' was left open.
+[0m15:34:49.575009 [debug] [MainThread]: On debug: Close
+[0m15:34:49.803990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4389AA010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E43EC9E050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4411B8710>]}
+[0m15:34:49.803990 [debug] [MainThread]: Flushing usage events
+[0m15:34:50.536066 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:34:55.369078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7348B6790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7348E5C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7348E5DD0>]}
+
+
+============================== 15:34:55.374083 | c110bb89-69b5-4368-bb9f-63209c3c1bd2 ==============================
+[0m15:34:55.374083 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:34:55.375087 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'True', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:34:55.641920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c110bb89-69b5-4368-bb9f-63209c3c1bd2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C735630AD0>]}
+[0m15:34:55.671437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c110bb89-69b5-4368-bb9f-63209c3c1bd2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7355B0CD0>]}
+[0m15:34:55.673439 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:34:55.816460 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:34:55.840459 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:34:55.842480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c110bb89-69b5-4368-bb9f-63209c3c1bd2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C733CCD890>]}
+[0m15:34:56.289005 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.src
+[0m15:34:56.292007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c110bb89-69b5-4368-bb9f-63209c3c1bd2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C735517F10>]}
+[0m15:34:56.315007 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:34:56.318006 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:34:56.337004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c110bb89-69b5-4368-bb9f-63209c3c1bd2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7366FC090>]}
+[0m15:34:56.338008 [info ] [MainThread]: Found 470 macros
+[0m15:34:56.338008 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c110bb89-69b5-4368-bb9f-63209c3c1bd2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C736A13710>]}
+[0m15:34:56.339007 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:34:56.340008 [debug] [MainThread]: Command end result
+[0m15:34:56.354005 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:34:56.355240 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:34:56.361238 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:34:56.362237 [debug] [MainThread]: Command `dbt run` succeeded at 15:34:56.362237 after 1.04 seconds
+[0m15:34:56.362237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7346D5010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7346D4B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7369C59D0>]}
+[0m15:34:56.363237 [debug] [MainThread]: Flushing usage events
+[0m15:34:57.101501 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:35:09.245799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E7147B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E71799D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E7146050>]}
+
+
+============================== 15:35:09.249800 | 3814159b-137f-45d1-b375-7f2b7cc8c8bb ==============================
+[0m15:35:09.249800 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:35:09.250800 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:35:09.517218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3814159b-137f-45d1-b375-7f2b7cc8c8bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E8EC0E10>]}
+[0m15:35:09.547203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3814159b-137f-45d1-b375-7f2b7cc8c8bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E7E40B90>]}
+[0m15:35:09.549202 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:35:09.693753 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:35:09.757778 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:35:09.757778 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:35:09.757778 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.src
+[0m15:35:09.762289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3814159b-137f-45d1-b375-7f2b7cc8c8bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E9252710>]}
+[0m15:35:09.786287 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:35:09.788287 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:35:09.806291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3814159b-137f-45d1-b375-7f2b7cc8c8bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E91E0AD0>]}
+[0m15:35:09.807290 [info ] [MainThread]: Found 470 macros
+[0m15:35:09.807290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3814159b-137f-45d1-b375-7f2b7cc8c8bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E912FD50>]}
+[0m15:35:09.808307 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:35:09.810289 [debug] [MainThread]: Command end result
+[0m15:35:09.824286 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:35:09.827288 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:35:09.829288 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:35:09.830288 [debug] [MainThread]: Command `dbt run` succeeded at 15:35:09.830288 after 0.63 seconds
+[0m15:35:09.830288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E6E05810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E0E37F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E0ECB790>]}
+[0m15:35:09.831288 [debug] [MainThread]: Flushing usage events
+[0m15:35:10.514476 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:35:37.689816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD5B8B64D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD5B6D4B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD5B6D4AD0>]}
+
+
+============================== 15:35:37.694269 | f0735774-71ff-48f9-96bc-96c2692e20c5 ==============================
+[0m15:35:37.694269 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:35:37.694269 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m15:35:37.964013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f0735774-71ff-48f9-96bc-96c2692e20c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD5B8BE710>]}
+[0m15:35:37.995587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f0735774-71ff-48f9-96bc-96c2692e20c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD5AC87550>]}
+[0m15:35:37.997580 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:35:38.148120 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:35:38.200210 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:35:38.201211 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:35:38.201211 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.src
+[0m15:35:38.205211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f0735774-71ff-48f9-96bc-96c2692e20c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD5D9C6950>]}
+[0m15:35:38.229210 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:35:38.232210 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:35:38.253212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f0735774-71ff-48f9-96bc-96c2692e20c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD5D9360D0>]}
+[0m15:35:38.253212 [info ] [MainThread]: Found 470 macros
+[0m15:35:38.254212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f0735774-71ff-48f9-96bc-96c2692e20c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD5B8B7E10>]}
+[0m15:35:38.256212 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:35:38.258213 [debug] [MainThread]: Command end result
+[0m15:35:38.273212 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:35:38.275211 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:35:38.278210 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:35:38.279212 [debug] [MainThread]: Command `dbt run` succeeded at 15:35:38.279212 after 0.64 seconds
+[0m15:35:38.280217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD5532A010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD5B575810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD55608150>]}
+[0m15:35:38.280217 [debug] [MainThread]: Flushing usage events
+[0m15:35:39.118630 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:37:07.479812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5A9A562D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5A9A55D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5A9A56510>]}
+
+
+============================== 15:37:07.483813 | 1c228e38-a8f8-4922-a6e1-ee72979b5a5c ==============================
+[0m15:37:07.483813 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:37:07.484812 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m15:37:07.714600 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path []: Additional properties are not allowed ('dbtlearn' was unexpected)
+
+Error encountered in C:\Users\Javid\PycharmProjects\dbtlearn\dbt_project.yml
+[0m15:37:07.716599 [debug] [MainThread]: Command `dbt run` failed at 15:37:07.715597 after 0.28 seconds
+[0m15:37:07.716599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5A36E7F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5A377B790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5A95E1790>]}
+[0m15:37:07.717599 [debug] [MainThread]: Flushing usage events
+[0m15:37:08.531724 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:38:11.682358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB8AD97D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB8ADC9D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB8ADC9B10>]}
+
+
+============================== 15:38:11.686556 | b44e3d66-8e84-4259-9544-b860d0256c30 ==============================
+[0m15:38:11.686556 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:38:11.687578 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:38:11.931079 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path []: Additional properties are not allowed ('dbtlearn' was unexpected)
+
+Error encountered in C:\Users\Javid\PycharmProjects\dbtlearn\dbt_project.yml
+[0m15:38:11.933079 [debug] [MainThread]: Command `dbt run` failed at 15:38:11.933079 after 0.29 seconds
+[0m15:38:11.933079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB8481A010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB84A67F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB84A67410>]}
+[0m15:38:11.933079 [debug] [MainThread]: Flushing usage events
+[0m15:38:12.675949 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:40:24.535129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D20DDF5F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D20DE201D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D20DE22050>]}
+
+
+============================== 15:40:24.539077 | 94a6b40e-1a27-4d07-abdb-78f8bb0017a3 ==============================
+[0m15:40:24.539077 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:40:24.539077 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m15:40:24.556650 [info ] [MainThread]: dbt version: 1.9.1
+[0m15:40:24.557652 [info ] [MainThread]: python version: 3.11.9
+[0m15:40:24.558649 [info ] [MainThread]: python path: C:\Users\Javid\PycharmProjects\dbtlearn\.venv\Scripts\python.exe
+[0m15:40:24.558649 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m15:40:24.774290 [info ] [MainThread]: Using profiles dir at C:\Users\Javid\.dbt
+[0m15:40:24.775294 [info ] [MainThread]: Using profiles.yml file at C:\Users\Javid\.dbt\profiles.yml
+[0m15:40:24.775294 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Javid\PycharmProjects\dbtlearn\dbt_project.yml
+[0m15:40:24.776488 [info ] [MainThread]: adapter type: snowflake
+[0m15:40:24.776927 [info ] [MainThread]: adapter version: 1.9.0
+[0m15:40:24.836515 [info ] [MainThread]: Configuration:
+[0m15:40:24.837512 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:40:24.837512 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:40:24.838514 [info ] [MainThread]: Required dependencies:
+[0m15:40:24.839513 [debug] [MainThread]: Executing "git --help"
+[0m15:40:24.868056 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:40:24.869050 [debug] [MainThread]: STDERR: "b''"
+[0m15:40:24.869050 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:40:24.869050 [info ] [MainThread]: Connection:
+[0m15:40:24.869050 [info ] [MainThread]:   account: akmafiv-sd36638
+[0m15:40:24.870555 [info ] [MainThread]:   user: javidasadullayev
+[0m15:40:24.870555 [info ] [MainThread]:   database: AIRBNB
+[0m15:40:24.871561 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m15:40:24.871561 [info ] [MainThread]:   role: transform
+[0m15:40:24.871561 [info ] [MainThread]:   schema: DEV
+[0m15:40:24.872561 [info ] [MainThread]:   authenticator: None
+[0m15:40:24.872561 [info ] [MainThread]:   oauth_client_id: None
+[0m15:40:24.872561 [info ] [MainThread]:   query_tag: None
+[0m15:40:24.872561 [info ] [MainThread]:   client_session_keep_alive: False
+[0m15:40:24.873560 [info ] [MainThread]:   host: None
+[0m15:40:24.873560 [info ] [MainThread]:   port: None
+[0m15:40:24.873560 [info ] [MainThread]:   proxy_host: None
+[0m15:40:24.873560 [info ] [MainThread]:   proxy_port: None
+[0m15:40:24.874559 [info ] [MainThread]:   protocol: None
+[0m15:40:24.876579 [info ] [MainThread]:   connect_retries: 1
+[0m15:40:24.876579 [info ] [MainThread]:   connect_timeout: None
+[0m15:40:24.876579 [info ] [MainThread]:   retry_on_database_errors: False
+[0m15:40:24.877560 [info ] [MainThread]:   retry_all: False
+[0m15:40:24.877560 [info ] [MainThread]:   insecure_mode: False
+[0m15:40:24.877560 [info ] [MainThread]:   reuse_connections: True
+[0m15:40:24.878560 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:40:25.013857 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m15:40:25.052407 [debug] [MainThread]: Using snowflake connection "debug"
+[0m15:40:25.053412 [debug] [MainThread]: On debug: select 1 as id
+[0m15:40:25.053412 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:40:26.016374 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.962 seconds
+[0m15:40:26.017373 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:40:26.017373 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:40:26.019372 [debug] [MainThread]: Command `dbt debug` succeeded at 15:40:26.018373 after 1.53 seconds
+[0m15:40:26.019372 [debug] [MainThread]: Connection 'debug' was left open.
+[0m15:40:26.019372 [debug] [MainThread]: On debug: Close
+[0m15:40:26.226206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D20EC79510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D20EAEE690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D210034510>]}
+[0m15:40:26.226206 [debug] [MainThread]: Flushing usage events
+[0m15:40:26.973399 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:40:36.864130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180B1265D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180B125DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180B126E10>]}
+
+
+============================== 15:40:36.868131 | b1e02218-19ac-4fda-88f7-21c6ee4bae61 ==============================
+[0m15:40:36.868131 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:40:36.869131 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Javid\\PycharmProjects\\dbtlearn\\logs', 'profiles_dir': 'C:\\Users\\Javid\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:40:37.152812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b1e02218-19ac-4fda-88f7-21c6ee4bae61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180B11B490>]}
+[0m15:40:37.184912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b1e02218-19ac-4fda-88f7-21c6ee4bae61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180BE00CD0>]}
+[0m15:40:37.186731 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m15:40:37.339843 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:40:37.399605 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m15:40:37.399605 [debug] [MainThread]: Partial parsing: added file: dbtlearn://models\src\src_listings.sql
+[0m15:40:37.542031 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.src
+[0m15:40:37.546037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b1e02218-19ac-4fda-88f7-21c6ee4bae61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180D3806D0>]}
+[0m15:40:37.581567 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:40:37.585076 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:40:37.601599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b1e02218-19ac-4fda-88f7-21c6ee4bae61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180D488BD0>]}
+[0m15:40:37.602605 [info ] [MainThread]: Found 1 model, 470 macros
+[0m15:40:37.602605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1e02218-19ac-4fda-88f7-21c6ee4bae61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180B193B10>]}
+[0m15:40:37.604612 [info ] [MainThread]: 
+[0m15:40:37.605612 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:40:37.605612 [info ] [MainThread]: 
+[0m15:40:37.606610 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:40:37.609629 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m15:40:37.739112 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m15:40:37.739112 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m15:40:37.740131 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:40:38.678323 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.938 seconds
+[0m15:40:38.680322 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_DEV'
+[0m15:40:38.687835 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_DEV"
+[0m15:40:38.688834 [debug] [ThreadPool]: On list_AIRBNB_DEV: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_AIRBNB_DEV"} */
+show objects in AIRBNB.DEV limit 10000;
+[0m15:40:38.688834 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:40:39.714769 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.025 seconds
+[0m15:40:39.716770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1e02218-19ac-4fda-88f7-21c6ee4bae61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180D2E6C50>]}
+[0m15:40:39.721769 [debug] [Thread-1 (]: Began running node model.dbtlearn.src_listings
+[0m15:40:39.722881 [info ] [Thread-1 (]: 1 of 1 START sql view model DEV.src_listings ................................... [RUN]
+[0m15:40:39.723889 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dbtlearn.src_listings'
+[0m15:40:39.723889 [debug] [Thread-1 (]: Began compiling node model.dbtlearn.src_listings
+[0m15:40:39.727890 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtlearn.src_listings"
+[0m15:40:39.729886 [debug] [Thread-1 (]: Began executing node model.dbtlearn.src_listings
+[0m15:40:39.751967 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtlearn.src_listings"
+[0m15:40:39.754351 [debug] [Thread-1 (]: Using snowflake connection "model.dbtlearn.src_listings"
+[0m15:40:39.755353 [debug] [Thread-1 (]: On model.dbtlearn.src_listings: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.src_listings"} */
+create or replace   view AIRBNB.DEV.src_listings
+  
+   as (
+    WITH raw_listings AS (
+ SELECT
+ *
+ FROM
+ AIRBNB.RAW.RAW_LISTINGS
+)
+SELECT
+ id AS listing_id,
+ name AS listing_name,
+ listing_url,
+ room_type,
+ minimum_nights,
+ host_id,
+ price AS price_str,
+ created_at,
+ updated_at
+FROM
+ raw_listings
+  );
+[0m15:40:39.755353 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:40:40.760262 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.006 seconds
+[0m15:40:40.775984 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b1e02218-19ac-4fda-88f7-21c6ee4bae61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002180D3C59D0>]}
+[0m15:40:40.776983 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DEV.src_listings .............................. [[32mSUCCESS 1[0m in 1.05s]
+[0m15:40:40.777985 [debug] [Thread-1 (]: Finished running node model.dbtlearn.src_listings
+[0m15:40:40.781485 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:40:40.782491 [debug] [MainThread]: Connection 'list_AIRBNB' was left open.
+[0m15:40:40.782491 [debug] [MainThread]: On list_AIRBNB: Close
+[0m15:40:41.478907 [debug] [MainThread]: Connection 'list_AIRBNB_DEV' was left open.
+[0m15:40:41.479908 [debug] [MainThread]: On list_AIRBNB_DEV: Close
+[0m15:40:41.684138 [debug] [MainThread]: Connection 'model.dbtlearn.src_listings' was left open.
+[0m15:40:41.684138 [debug] [MainThread]: On model.dbtlearn.src_listings: Close
+[0m15:40:41.911539 [info ] [MainThread]: 
+[0m15:40:41.913547 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.30 seconds (4.30s).
+[0m15:40:41.914051 [debug] [MainThread]: Command end result
+[0m15:40:41.931568 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\manifest.json
+[0m15:40:41.932926 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Javid\PycharmProjects\dbtlearn\target\semantic_manifest.json
+[0m15:40:41.936925 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Javid\PycharmProjects\dbtlearn\target\run_results.json
+[0m15:40:41.937924 [info ] [MainThread]: 
+[0m15:40:41.938923 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:40:41.938923 [info ] [MainThread]: 
+[0m15:40:41.939922 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m15:40:41.940926 [debug] [MainThread]: Command `dbt run` succeeded at 15:40:41.940926 after 5.12 seconds
+[0m15:40:41.940926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021804E27F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021804E27410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021804E273D0>]}
+[0m15:40:41.941923 [debug] [MainThread]: Flushing usage events
+[0m15:40:42.654732 [debug] [MainThread]: An error was encountered while trying to flush usage events
